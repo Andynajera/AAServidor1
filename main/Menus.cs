@@ -4,9 +4,9 @@ using System.Text.Json;
 using Spectre.Console;
 class Menus
 {
-    
 
-     public static void Login()
+
+    public static void Login()
     {
 
         AnsiConsole.Write(new Markup("[bold Red]Elige[/] "));
@@ -16,45 +16,58 @@ class Menus
     }
     public static void showMainMenu()
     {
+
         AnsiConsole.Write(new Markup("[bold green] Menu principal[/] "));
         Console.WriteLine("");
         AnsiConsole.Write(new Markup("[bold white]0 - Usuarios[/] "));
         Console.WriteLine("");
-        AnsiConsole.Write(new Markup("[bold white]1 - Productos[/] "));
+        AnsiConsole.Write(new Markup("[bold white]1 - Grados[/] "));
+        Console.WriteLine("");
+        AnsiConsole.Write(new Markup("[bold white]2 - Pagos[/] "));
+        Console.WriteLine("");
 
-        
-        
+
+
+
     }
     public static void showUserMenu()
     {
-        
+        Console.WriteLine("");
         AnsiConsole.Write(new Markup("[bold Green] Menú de usuarios[/] "));
-         Console.WriteLine("");
-        AnsiConsole.Write(new Markup("[bold white]0 - Listar usuarios[/] "));
-         Console.WriteLine("");
+        Console.WriteLine("");
+        AnsiConsole.Write(new Markup("[bold white]0 - Buscar usuarios[/] "));
+        Console.WriteLine("");
         AnsiConsole.Write(new Markup("[bold white]1 - Insertar usuario[/] "));
-         Console.WriteLine("");
+        Console.WriteLine("");
         AnsiConsole.Write(new Markup("[bold white]2 - Cambiar genero[/] "));
-         Console.WriteLine("");
+        Console.WriteLine("");
         AnsiConsole.Write(new Markup("[bold red]3 - Elija 3 para poder salir[/] "));
-                       
+        Console.WriteLine("");
+
 
     }
-       public static void showProductMenu()
+    public static void showProductMenu()
     {
-        AnsiConsole.Write(new Markup("[bold Green] Menú de productos[/] "));
-         Console.WriteLine("");
-        AnsiConsole.Write(new Markup("[bold white]0 - Listar productos[/] "));
-         Console.WriteLine("");
-        AnsiConsole.Write(new Markup("[bold white]1 - Insertar producto[/] "));
-         Console.WriteLine("");
-        AnsiConsole.Write(new Markup("[bold white]2 - ¿Queda stock[/] "));
-         Console.WriteLine("");
+        Console.WriteLine("");
+        AnsiConsole.Write(new Markup("[bold Green] Menú para administrar los grados[/] "));
+        Console.WriteLine("");
+        AnsiConsole.Write(new Markup("[bold white]0 - Listar grados[/] "));
+        Console.WriteLine("");
+        AnsiConsole.Write(new Markup("[bold white]1 - Insertar grados[/] "));
+        Console.WriteLine("");
+        AnsiConsole.Write(new Markup("[bold white]2 - Cambiar si quedan plazas plazas[/] "));
+        Console.WriteLine("");
         AnsiConsole.Write(new Markup("[bold red]3 - Elija 3 para poder salir[/] "));
+        Console.WriteLine("");
 
     }
-    
 
+    public static void showPagosMenu()
+    {
+        Console.WriteLine("");
+        AnsiConsole.Write(new Markup("[bold Green] Menú para administrar los pagos del usuario[/] "));
+        Console.WriteLine("");
 
-   
+    }
+
 }

@@ -5,6 +5,7 @@ using Spectre.Console;
 
 UserRepository users = new UserRepository();
 ProductRepository degrees = new ProductRepository();
+PagosRepository pagos = new PagosRepository();
 
 
 FunctionsMenu.Corazon();
@@ -34,19 +35,12 @@ FunctionsMenu.Tabla();
         }
     } while (ClaveIngreso != "123");
 
-
-
-
     {
         // Se da la bienvenida al usuario y que opcion va a escoger
         Console.Clear();
         Console.WriteLine();
         AnsiConsole.Write(new Markup("[bold red3]Hola, Bienvenido[/] " + NombreIngreso + "[bold darkgoldenrod] Seleccione que programa va usar:[/]"));
         Console.WriteLine();
-
-
-
-
 
         do
         {
@@ -129,6 +123,11 @@ FunctionsMenu.Tabla();
 
                     } while (!degreeExit);
                     break;
+
+                case 2:
+                    functionsPagos.ListInformation();
+                    break;
+
             }
         } while (OpcionMENU != 5);
         Console.ReadKey();

@@ -1,17 +1,17 @@
 namespace Classes;
 
 class ProductRepository{
-    List<Product> data = new List<Product>();
+    List<Grades> data = new List<Grades>();
 
-    public void create(Product newProduct){
+    public void create(Grades newProduct){
         data.Add(newProduct);
     }
 
-    public List<Product> all(){
+    public List<Grades> all(){
         return data;
     }
 
-    public Product find(string name){
+    public Grades find(string name){
         return data.Find(item=> item.name== name);
     }
 

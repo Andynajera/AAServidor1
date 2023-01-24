@@ -10,7 +10,7 @@ RUN dotnet restore
 RUN dotnet publish -c Release -o out
 
 # final stage/image
-FROM mcr.microsoft.com/dotnet/aspnet:6.0
+FROM mcr.microsoft.com/dotnet/core/runtime:6.0
 WORKDIR /App
 COPY --from=build /App/out . 
-ENTRYPOINT ["dotnet", "ExpedienteGradoAndrea.dll"]
+ENTRYPOINT ["dotnet","expedientegradoandrea.dll"]

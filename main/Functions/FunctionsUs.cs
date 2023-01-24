@@ -62,7 +62,7 @@ class FunctionsUs
         }
         catch (Exception ex)
         {
-            Console.WriteLine("No has escrito bien el nombre de Usuario");
+             AnsiConsole.Write(new Markup(" [red]No has escrito bien el nombre de Usuario[/]"));
         }
     }
 

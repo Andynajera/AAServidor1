@@ -22,6 +22,7 @@ class FunctionsMenu
         AnsiConsole.Write(new Markup("[bold red]       0  [/] "));
         Console.WriteLine("");
         Console.WriteLine("");
+        
     }
 
     public static void Tabla()

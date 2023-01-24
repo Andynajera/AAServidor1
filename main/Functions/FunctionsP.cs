@@ -12,8 +12,8 @@ class functionsP
 
 public static void listGrade(ProductRepository degrees)
 {
-    List<Product> allProducts = degrees.all();
-    foreach (Product individualProduct in allProducts)
+    List<Grades> allProducts = degrees.all();
+    foreach (Grades individualProduct in allProducts)
     {
         Console.WriteLine(individualProduct.Summary());
     }
@@ -31,7 +31,7 @@ public static void listGrade(ProductRepository degrees)
             DateTime dataExpediente = Asker.askDate("Introduzca el la fecha de comiezo ");
             decimal price = Asker.askDecimal("Introduzca el precio ");
             int cantidadPlazas = Asker.askInteger("Introduzca la cantidad de plazas");
-            Product newProduct = new Product(name, nameDegree, quedanPlazas, dataExpediente, price, cantidadPlazas);
+            Grades newProduct = new Grades(name, nameDegree, quedanPlazas, dataExpediente, price, cantidadPlazas);
             degrees.create(newProduct);
         }
         catch (Exception ex)
@@ -48,7 +48,7 @@ public static void listGrade(ProductRepository degrees)
         try
         {
             string degreeNameToChange = Asker.askString("Nombre del grado para cambiar si quedan plazas o no : ");
-            Product degreeToChange = degrees.find(degreeNameToChange);
+            Grades degreeToChange = degrees.find(degreeNameToChange);
             degreeToChange.ChangeGender();
         }
         catch (Exception ex)

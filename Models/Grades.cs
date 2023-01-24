@@ -1,5 +1,5 @@
 namespace Classes;
- public class Product{
+ public class Grades{
     public string name { get; }
     public string nameDegree { get; }
     public bool quedanPlazas { get;set; }
@@ -8,7 +8,7 @@ namespace Classes;
     public int cantidadPlazas { get; }
     
 
-    public Product(string name,string nameDegree, bool quedanPlazas,DateTime dataExpediente, decimal price,int cantidadPlazas){
+    public Grades(string name,string nameDegree, bool quedanPlazas,DateTime dataExpediente, decimal price,int cantidadPlazas){
         this.name=name;
         this.nameDegree=nameDegree;
         this.quedanPlazas=quedanPlazas;
